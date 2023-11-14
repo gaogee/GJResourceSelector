@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GJResourceSelector'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of GJResourceSelector.'
+  s.version          = '0.1.1'
+  s.summary          = 'Custom album selector.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: Customized album selector, supports multiple selection, single selection of photos or videos.
                        DESC
 
   s.homepage         = 'https://github.com/gaogee/GJResourceSelector'
@@ -26,9 +26,9 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'gaogee' => 'gaoju_os@163.com' }
   s.source           = { :git => 'https://github.com/gaogee/GJResourceSelector.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://www.zhihu.com/people/flutter-45-53<gaogee>'
 
-  s.ios.deployment_target = '0.1.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'GJResourceSelector/Classes/**/*'
   
