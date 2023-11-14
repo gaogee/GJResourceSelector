@@ -1,0 +1,16 @@
+PODS:
+  - GJResourceSelector (0.1.0)
+
+DEPENDENCIES:
+  - GJResourceSelector (from `../`)
+
+EXTERNAL SOURCES:
+  GJResourceSelector:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GJResourceSelector: 202ce8024f940321c12b43777a3f1259dbddc5ec
+
+PODFILE CHECKSUM: dad57b756856b308d9b9650c4caffe67be61f6b2
+
+COCOAPODS: 1.12.1
