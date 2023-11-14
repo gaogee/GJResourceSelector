@@ -24,6 +24,7 @@
 @property (nonatomic,strong) GJSelectResourceTableView *tableView;
 @property (nonatomic, nullable) GJResourceSelectorCompletedBlock completedBlock;
 @property (nonatomic, nullable) GJResourceSelectorCancelBlock  cancelBlock;
+@property (nonatomic, nullable) GJResourceClickItemBlock clickItemBlock;
 @property (nonatomic, strong) NSArray<PHAssetCollection *> *assetCollections;
 
 @end
@@ -171,6 +172,11 @@
         flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
         _collectionView = [[GJSelectResourceCollectionView alloc] initWithFrame:CGRectMake(0, 65, GJResourceScreenWidth, GJResourceScreenHeight-GJResourceStatusHeight-65-GJResourceTabBarHeight*.8) collectionViewLayout:flowLayout];
         _collectionView.backgroundColor = [UIColor whiteColor];
+        __weak typeof(self) weakSelf = self;
+        [_collectionView setClickItemBlock:^(NSInteger index, PHFetchResult * _Nullable fetchResult, GJSelectResourceCollectionView * _Nonnull collectionView) {
+            __strong typeof(self) strongSelf = weakSelf;
+            strongSelf.clickItemBlock(index, fetchResult, collectionView);
+        }];
     }
     return _collectionView;
 }
@@ -200,7 +206,7 @@
     }
 }
 
-+(void)loadWithLimitNumber:(NSInteger)selectLimitNumber mediaType:(GJResourceAssetMediaType)mediaType completedBlock:(nullable GJResourceSelectorCompletedBlock)completedBlock cancelBlock:(nullable GJResourceSelectorCancelBlock)cancelBlock{
++(void)loadWithLimitNumber:(NSInteger)selectLimitNumber mediaType:(GJResourceAssetMediaType)mediaType completedBlock:(nullable GJResourceSelectorCompletedBlock)completedBlock cancelBlock:(nullable GJResourceSelectorCancelBlock)cancelBlock clickItemBlock:(GJResourceClickItemBlock)clickItemBlock{
    
    if ([PHPhotoLibrary authorizationStatus] == PHAuthorizationStatusAuthorized){//用户之前已经授权
         
@@ -212,7 +218,7 @@
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
             if (status == PHAuthorizationStatusAuthorized){//允许
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    [self loadWithLimitNumber:selectLimitNumber mediaType:mediaType completedBlock:completedBlock cancelBlock:cancelBlock];
+                    [self loadWithLimitNumber:selectLimitNumber mediaType:mediaType completedBlock:completedBlock cancelBlock:cancelBlock clickItemBlock:clickItemBlock];
                 });
                 return;
             }else{//拒绝
@@ -230,6 +236,7 @@
     view.assetCollections = assetCollections;
     view.completedBlock = completedBlock;
     view.cancelBlock = cancelBlock;
+    view.clickItemBlock = clickItemBlock;
     view.effectView.alpha = 0;
     view.contentView.frame = CGRectMake(0, GJResourceScreenHeight, GJResourceScreenWidth, GJResourceScreenHeight-GJResourceStatusHeight);
     [UIView animateWithDuration:.2 animations:^{

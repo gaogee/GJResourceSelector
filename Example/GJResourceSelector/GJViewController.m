@@ -31,13 +31,6 @@
     btn1.backgroundColor = [UIColor redColor];
     [self.view addSubview:btn1];
     [btn1 addTarget:self action:@selector(selectClick1) forControlEvents:UIControlEventTouchUpInside];
-    
-    GJResourceSelectorConfig.config.goBackImage = [UIImage imageNamed:@"pk_photo_selected_goback"];
-    GJResourceSelectorConfig.config.filterImage = [UIImage imageNamed:@"pk_photo_selected_open"];
-    GJResourceSelectorConfig.config.filterImage = [UIImage imageNamed:@"pk_photo_selected_open"];
-    GJResourceSelectorConfig.config.selectedImage = [UIImage imageNamed:@"pk_photo_selected"];
-    GJResourceSelectorConfig.config.unSelectedImage = [UIImage imageNamed:@"pk_photo_un_selected"];
-    GJResourceSelectorConfig.config.videoDurationImage = [UIImage imageNamed:@"pk_browser_video"];
    
 }
 -(void)selectClick{
@@ -46,6 +39,8 @@
         
     } cancelBlock:^(GJResourceSelectorView * _Nonnull alertView) {
         
+    }clickItemBlock:^(NSInteger index, PHFetchResult * _Nullable fetchResult, GJSelectResourceCollectionView * _Nonnull collectionView) {
+        
     }];
 }
 -(void)selectClick1{
@@ -53,6 +48,8 @@
     [GJResourceSelectorView loadWithLimitNumber:1 mediaType:GJResourceAssetMediaTypeVideo completedBlock:^(GJResourceSelectorView * _Nonnull alertView, NSMutableArray<UIImage *> * _Nullable photos, NSString * _Nullable videoPath) {
         
     } cancelBlock:^(GJResourceSelectorView * _Nonnull alertView) {
+        
+    }clickItemBlock:^(NSInteger index, PHFetchResult * _Nullable fetchResult, GJSelectResourceCollectionView * _Nonnull collectionView) {
         
     }];
 }

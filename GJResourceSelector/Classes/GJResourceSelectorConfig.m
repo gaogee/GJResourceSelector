@@ -16,6 +16,12 @@ static GJResourceSelectorConfig *_config = nil;
     });
     return _config;
 }
+-(UIImage *)goBackImage{
+    if (!_goBackImage){
+        _goBackImage = [UIImage imageWithContentsOfFile:[self imageFileWithImageName:@"gj_photo_selected_goback.png"]];
+    }
+    return _goBackImage;
+}
 -(NSString *)sureButtonTitle{
     if(!_sureButtonTitle){
         _sureButtonTitle = @"Confirm";
@@ -34,6 +40,32 @@ static GJResourceSelectorConfig *_config = nil;
     }
     return _filterTitleFont;
 }
+-(UIImage *)filterImage{
+    if (!_filterImage){
+        _filterImage = [UIImage imageWithContentsOfFile:[self imageFileWithImageName:@"gj_photo_selected_open.png"]];
+    }
+    return _filterImage;
+}
+
+-(UIColor *)selectedButtonBgColor{
+    if(!_selectedButtonBgColor){
+        _selectedButtonBgColor = [UIColor blueColor];
+    }
+    return _selectedButtonBgColor;
+}
+-(UIColor *)selectedButtonTitleColor{
+    if(!_selectedButtonTitleColor){
+        _selectedButtonTitleColor = [UIColor whiteColor];
+    }
+    return _selectedButtonTitleColor;
+}
+-(UIColor *)unSelectedButtonBorderColor{
+    if(!_unSelectedButtonBorderColor){
+        _unSelectedButtonBorderColor = [UIColor whiteColor];
+    }
+    return _unSelectedButtonBorderColor;
+}
+
 -(UIColor *)sureButtonBgColor{
     if(!_sureButtonBgColor){
         _sureButtonBgColor = [UIColor blueColor];
@@ -58,5 +90,14 @@ static GJResourceSelectorConfig *_config = nil;
         _videoDurationTextColor = [UIColor whiteColor];
     }
     return _videoDurationTextColor;
+}
+-(UIImage *)videoDurationImage{
+    if (!_videoDurationImage){
+        _videoDurationImage = [UIImage imageWithContentsOfFile:[self imageFileWithImageName:@"gj_browser_video.png"]];
+    }
+    return _videoDurationImage;
+}
+-(NSString *)imageFileWithImageName:(NSString *)imageName{
+    return [[NSBundle bundleForClass:self.class] pathForResource:imageName ofType:nil inDirectory:@"GJResourceSelector.bundle"];
 }
 @end

@@ -44,6 +44,9 @@
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if(self.clickItemBlock){
+        self.clickItemBlock(indexPath.row, self.fetchResult, self);
+    }
 //    GJSelectedAssetsManager *browser = [GJSelectedAssetsManager new];
 //    browser.defaultToolViewHandler.topView.operationType = 3;
 //    NSMutableArray *dataSourceArray = [NSMutableArray arrayWithCapacity:5];

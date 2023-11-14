@@ -1,6 +1,6 @@
 {
   "name": "GJResourceSelector",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "Custom album selector.",
   "description": "TODO: Customized album selector, supports multiple selection, single selection of photos or videos.",
   "homepage": "https://github.com/gaogee/GJResourceSelector",
@@ -13,11 +13,16 @@
   },
   "source": {
     "git": "https://github.com/gaogee/GJResourceSelector.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "social_media_url": "https://www.zhihu.com/people/flutter-45-53<gaogee>",
   "platforms": {
-    "ios": "11.0"
+    "ios": "10.0"
   },
-  "source_files": "GJResourceSelector/Classes/**/*"
+  "source_files": "GJResourceSelector/Classes/**/*",
+  "resource_bundles": {
+    "GJResourceSelector": [
+      "GJResourceSelector/Assets/*.png"
+    ]
+  }
 }

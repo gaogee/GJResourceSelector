@@ -14,16 +14,20 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)config;
 //TopBar config
 @property (nonatomic, strong)UIImage *goBackImage;
+
 @property (nonatomic, strong)UIImage *filterImage;
 @property (nonatomic, strong)UIColor *filterTitleColor;
 @property (nonatomic, strong)UIFont *filterTitleFont;
+
 @property (nonatomic, strong)NSString *sureButtonTitle;
 @property (nonatomic, strong)UIColor *sureButtonBgColor;
 @property (nonatomic, strong)UIColor *sureButtonTitleColor;
 @property (nonatomic, strong)UIFont *sureButtonTitleFont;
 
-@property (nonatomic, strong)UIImage *selectedImage;
-@property (nonatomic, strong)UIImage *unSelectedImage;
+@property (nonatomic, strong)UIColor *selectedButtonBgColor;
+@property (nonatomic, strong)UIColor *selectedButtonTitleColor;
+@property (nonatomic, strong)UIColor *unSelectedButtonBorderColor;
+
 @property (nonatomic, strong)UIImage *videoDurationImage;
 @property (nonatomic, strong)UIColor *videoDurationTextColor;
 @end

@@ -1,5 +1,5 @@
 PODS:
-  - GJResourceSelector (0.1.1)
+  - GJResourceSelector (0.1.2)
 
 DEPENDENCIES:
   - GJResourceSelector (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  GJResourceSelector: c942a0e3b06750ab17f28d8d49732ef3220a39aa
+  GJResourceSelector: a2c131dcdc1adb06a0a516cebcc8bbabf797b266
 
 PODFILE CHECKSUM: dad57b756856b308d9b9650c4caffe67be61f6b2
 

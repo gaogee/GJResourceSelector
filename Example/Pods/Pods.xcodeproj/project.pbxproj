@@ -7,46 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06CCA9D0D4275EB5BB27CE3934CCC0A8 /* GJResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A089AA2B9F74F0965F89C66A12027875 /* GJResourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A500F11F1D3B0A99417CDED4CA647DD /* GJResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E6ABC29131A8D7AAE105CCECCB636639 /* GJResourceManager.m */; };
-		246F8457B17D1C8E56F169C34F64D539 /* GJResourceSelector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4FD8F3F24E296146EF06DA2F7474486 /* GJResourceSelector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		251D751366D2DF5F5F4D9AF349D888BC /* GJSelectResourceTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A4483025A7D97F2CC9BE9E5B3A81F5CE /* GJSelectResourceTopBar.m */; };
-		35C56D4AE2D6AD6C96D12E6E6FEB0CCF /* GJResourceSelectorConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F582DE5F2BC4BC5D735EA95D6ABCF85 /* GJResourceSelectorConfig.m */; };
+		25EC22648D6FB7E1861595B52A8144DF /* gj_photo_selected_open.png in Resources */ = {isa = PBXBuildFile; fileRef = 78AECCA0AE4884445E3DCAA37CB9A8E6 /* gj_photo_selected_open.png */; };
+		27EE300ED9F7A500F087662CD76926E4 /* GJResourceSelectorConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C126F3613D0F70A18D2B568827923922 /* GJResourceSelectorConfig.m */; };
+		2FA777A3E27F8157ADE70EB33A8F4AE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		39E49DF1E871E9DCEE757F0F1D54107B /* Pods-GJResourceSelector_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4052468341AA5BF711D00B2C7FB06762 /* Pods-GJResourceSelector_Example-dummy.m */; };
 		3DC6182226C047A960E0C00A6F4F1EE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		467F64CAA6DC198A9CA3891DF8F28685 /* Pods-GJResourceSelector_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90544E60F9057632A4111F5CDEAD4389 /* Pods-GJResourceSelector_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		485D13B66C7E2B8F10EA7E65EB0E9C35 /* GJResourceSelectorConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2467BD5C87B5A9593717D5BFF3907178 /* GJResourceSelectorConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4915AAD92A132312189601AA626B53F3 /* GJSelectResourceCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB37C22D66C593F8626AE94FB4E533C5 /* GJSelectResourceCollectionViewCell.m */; };
-		60A832737DE7A29EF030B5437ECBA670 /* GJSelectResourceTopBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 49BF91577A7D7E2AC6AA4A1F50B89431 /* GJSelectResourceTopBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		669218E577929CA541069C2FF358EEBD /* GJSelectResourceTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 97121C3893B97248A3351A66BD83F62D /* GJSelectResourceTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C155A1329D469572A5D1D593E348825 /* GJSelectResourceTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 205D6C953911E820A7B00B98FC9300C2 /* GJSelectResourceTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A1C23CC737B11067F9D94BE649BD0DE /* GJResourceSelector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33565792965D8A5E3A1E053E47F2BF13 /* GJResourceSelector-dummy.m */; };
+		5D03CA884CC9AAD33A015A4AF778E80B /* GJResourceSelectorHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 085D4EF6DCBB4F153F81B3AA0BE5B158 /* GJResourceSelectorHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61FB44BDCA784331B79838A843F2AAFE /* GJResourceSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220ED7BAE2E6A9496501DC0CD76FB21A /* GJResourceSelectorView.m */; };
 		68A43AC1CCBB2EDF0BCA461022C85244 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7353782FA58323C55B0C7E223C736A10 /* GJResourceSelectorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9314F924078C24B566666D68F8FED /* GJResourceSelectorHelper.m */; };
-		748057879275BD973A80378EBCABF220 /* GJSelectedAssetsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A44EB1385D22BDD33B4731160505FC /* GJSelectedAssetsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		757241F6CC1B96A7A18AFB521F51DF76 /* GJSelectResourceCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 912632F9D9A91CC6C4BC1F6E7E433AD2 /* GJSelectResourceCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7CF7AC7D1F72D7DB84D04DA2BAF78CFD /* GJSelectResourceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 072DB22B9FA1A4BBE41AD28B330DF741 /* GJSelectResourceTableView.m */; };
-		8C267DE2072EBE85112439A10C4050A7 /* GJResourceSelector-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC5217605F6A4BFAE5B0410BB57CF12 /* GJResourceSelector-dummy.m */; };
-		8F3A177C69F5BEAABD21D3905B8BDB8D /* GJSelectResourceCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD45B4743EC7EA56679AB3A4E0D4BBD5 /* GJSelectResourceCollectionView.m */; };
-		A2CB0A60117D9E80F414C6EF38B64DED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		694F5DF67B107BD96713C56CC5BA5BA2 /* GJSelectResourceCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = CC5A5A25E392A8F392BB59F5540C94A0 /* GJSelectResourceCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78CCC0D9F3D79E06288F648BCA04C2BB /* GJResourceSelectorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 77268F2EA1745AF9002205C6E956DB1B /* GJResourceSelectorHelper.m */; };
+		7C9E4D068F95642FEA61B85BF2DB73C6 /* GJResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F1C8C494CABA5B221970745A17BD7 /* GJResourceManager.m */; };
+		7CB265030D57DFCD37AD373B58B9D5B6 /* gj_photo_selected_goback.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D1AD2E1BB3956CF84E072AA8B1AA27 /* gj_photo_selected_goback.png */; };
+		7FDB4685919AD4ACA5788C014CAF941B /* GJResourceSelector-GJResourceSelector in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB7FA4FC5D1BD99D0861A0AF6FFCC3 /* GJResourceSelector-GJResourceSelector */; };
+		999532CEB4D5B7248E221F5779AF0C26 /* GJSelectResourceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F475ED5ED54C5621C60C8405A0ED586 /* GJSelectResourceTableViewCell.m */; };
+		9D04EA17690A32F81A47E61E5CC859DB /* GJSelectResourceTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8658D0DC81D4591A1B51A80E5E912D3 /* GJSelectResourceTableView.m */; };
+		9D6CCA88623F1C108D93B2B581C2B2EB /* GJResourceSelector-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD3F373B5E88A1C24C57D095986B66A4 /* GJResourceSelector-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A06133E1E2FE869D3D5F76693112AB06 /* GJSelectedAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A50335200D76CE7B5F7F0410210074 /* GJSelectedAssetsManager.m */; };
 		A458865000B7F9639D7AFFE71BD802C5 /* Pods-GJResourceSelector_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B007A56E72DAD5B7612293076F32C86 /* Pods-GJResourceSelector_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5D8D6FA2375DD25E42956E39CC68F36 /* GJSelectResourceCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 17674CDFB997A3EEAE274B3EEEC05A8E /* GJSelectResourceCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6495AD4F6CE54E83ACD400B7D735294 /* GJResourceSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91F7974C577489E3F6189E760B5E32 /* GJResourceSelectorView.m */; };
-		CDA39066800B4D4F80A16609AB7DECEE /* GJSelectedAssetsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E560BEFA9777B86BD04203376951F084 /* GJSelectedAssetsManager.m */; };
-		DED6B8C4CD1FE03750DAC007E2B9AC75 /* GJSelectResourceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BAE59883D135E141C4AC3190ED2C5F /* GJSelectResourceTableViewCell.m */; };
+		B4633C03A7B517BF8D503485AD8ACE6A /* GJSelectedAssetsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 147055EB0EDAB83E87CF6C3609A36C51 /* GJSelectedAssetsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B976B9E8DC43295573E8F8A36D423E91 /* GJSelectResourceTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 85485AC75719541A5CF791A8B142C8C3 /* GJSelectResourceTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C22B5D6A970666B0DF22F5A9A74263AE /* GJResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 75D26CD143BBD72D871424A1D392565F /* GJResourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8D812CDD2E996B4AB2C78EA4C9C2327 /* GJSelectResourceCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D0BC090ABC387B8FC194319133C13A9 /* GJSelectResourceCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3DB07299245EABB1770FECD310C29F4 /* gj_browser_video.png in Resources */ = {isa = PBXBuildFile; fileRef = EB4289AC23BACBC2A87ECB89DB9D307B /* gj_browser_video.png */; };
+		D4FFC3EA7241751F5EEF7E878EFC0BD2 /* GJResourceSelectorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 39A238DB92655DD0909DBFE75B6A5CE9 /* GJResourceSelectorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D633BCE7E5DC87D9204C1BE6CDF701F2 /* GJResourceSelectorConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C10BEEA1B5262F4DF1DDEF3257B68EF0 /* GJResourceSelectorConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDF0D4953E3BDD376D82607E8EB44729 /* GJSelectResourceCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7129EFE3D54C7FD8C0C761C4385934AF /* GJSelectResourceCollectionViewCell.m */; };
 		E247742BEB2F5E0AA06163CDBA4F7DDA /* Pods-GJResourceSelector_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CF040BE9BBCB92E9695D22360FF41 /* Pods-GJResourceSelector_Tests-dummy.m */; };
-		E318C102EA667D57591879B97EDC7EF5 /* GJSelectResourceTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 42D53299A1F842835FA17905E380C68C /* GJSelectResourceTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAA619FE06767F2F38505CF8A3617CAB /* GJResourceSelectorHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECB7CF01A13EA5149222433061B534E /* GJResourceSelectorHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3B9853170B1A00BD6B58A849A8A8E9D /* GJResourceSelectorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 64B32E2E4DB41AD2ECD1B8086985B312 /* GJResourceSelectorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6358373BC260AA92BF92C48F9433EEC /* GJSelectResourceTopBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A93E611731918950DF9ED5A6622E36 /* GJSelectResourceTopBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F95718EF9765C890F3552B218FA6128B /* GJSelectResourceCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AE77BA76A87E9694C5CBC4D968B235 /* GJSelectResourceCollectionView.m */; };
+		FA409E63D308436196BFE1E8F401AEB0 /* GJSelectResourceTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2874213CDF1AC3BB7780F2A81680C91 /* GJSelectResourceTopBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		03408B7C433E2F4BBFF3EF153F547801 /* PBXContainerItemProxy */ = {
+		0DE0F8907AAB8E61CDC5B8BD5BF52CC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39BBB70212B2AAE0921CDD15E288FC6F;
+			remoteInfo = "GJResourceSelector-GJResourceSelector";
+		};
+		7AC932A68B6704F8F06978DA759BAAA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A413A7BA1C45BE6FC290CF5F8678863C;
 			remoteInfo = "Pods-GJResourceSelector_Example";
 		};
-		A488A69C3CE2C0EF18564AF89E209C3E /* PBXContainerItemProxy */ = {
+		F38F2EA934C27CA6A04109465EFA1939 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -56,66 +67,78 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		072DB22B9FA1A4BBE41AD28B330DF741 /* GJSelectResourceTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJSelectResourceTableView.m; path = GJResourceSelector/Classes/GJSelectResourceTableView.m; sourceTree = "<group>"; };
-		0CE9314F924078C24B566666D68F8FED /* GJResourceSelectorHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJResourceSelectorHelper.m; path = GJResourceSelector/Classes/GJResourceSelectorHelper.m; sourceTree = "<group>"; };
+		01D1AD2E1BB3956CF84E072AA8B1AA27 /* gj_photo_selected_goback.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gj_photo_selected_goback.png; path = GJResourceSelector/Assets/gj_photo_selected_goback.png; sourceTree = "<group>"; };
+		085D4EF6DCBB4F153F81B3AA0BE5B158 /* GJResourceSelectorHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJResourceSelectorHelper.h; path = GJResourceSelector/Classes/GJResourceSelectorHelper.h; sourceTree = "<group>"; };
+		08A93E611731918950DF9ED5A6622E36 /* GJSelectResourceTopBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJSelectResourceTopBar.h; path = GJResourceSelector/Classes/GJSelectResourceTopBar.h; sourceTree = "<group>"; };
+		0FEB7FA4FC5D1BD99D0861A0AF6FFCC3 /* GJResourceSelector-GJResourceSelector */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "GJResourceSelector-GJResourceSelector"; path = GJResourceSelector.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E24348B989FB75B99E89592D36E6C7 /* GJResourceSelector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GJResourceSelector.release.xcconfig; sourceTree = "<group>"; };
 		137E53EBD78BBBED725ED28F2D8292E3 /* Pods-GJResourceSelector_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GJResourceSelector_Example-Info.plist"; sourceTree = "<group>"; };
 		143E5CDC7749EF4AA9B0B0CD83DD027E /* Pods-GJResourceSelector_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GJResourceSelector_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		17674CDFB997A3EEAE274B3EEEC05A8E /* GJSelectResourceCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJSelectResourceCollectionViewCell.h; path = GJResourceSelector/Classes/GJSelectResourceCollectionViewCell.h; sourceTree = "<group>"; };
+		147055EB0EDAB83E87CF6C3609A36C51 /* GJSelectedAssetsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJSelectedAssetsManager.h; path = GJResourceSelector/Classes/GJSelectedAssetsManager.h; sourceTree = "<group>"; };
 		1CF8AF7023D651C15A5376AF161B2292 /* Pods-GJResourceSelector_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GJResourceSelector_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1F582DE5F2BC4BC5D735EA95D6ABCF85 /* GJResourceSelectorConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJResourceSelectorConfig.m; path = GJResourceSelector/Classes/GJResourceSelectorConfig.m; sourceTree = "<group>"; };
-		21F168F83EB65B5CAF9E2CB24D8E9232 /* GJResourceSelector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GJResourceSelector-prefix.pch"; sourceTree = "<group>"; };
-		2467BD5C87B5A9593717D5BFF3907178 /* GJResourceSelectorConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJResourceSelectorConfig.h; path = GJResourceSelector/Classes/GJResourceSelectorConfig.h; sourceTree = "<group>"; };
+		205D6C953911E820A7B00B98FC9300C2 /* GJSelectResourceTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJSelectResourceTableView.h; path = GJResourceSelector/Classes/GJSelectResourceTableView.h; sourceTree = "<group>"; };
+		212BAE888FA33BD258C866AE4A386E1E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		220ED7BAE2E6A9496501DC0CD76FB21A /* GJResourceSelectorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJResourceSelectorView.m; path = GJResourceSelector/Classes/GJResourceSelectorView.m; sourceTree = "<group>"; };
+		2C1F1C8C494CABA5B221970745A17BD7 /* GJResourceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJResourceManager.m; path = GJResourceSelector/Classes/GJResourceManager.m; sourceTree = "<group>"; };
+		33565792965D8A5E3A1E053E47F2BF13 /* GJResourceSelector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GJResourceSelector-dummy.m"; sourceTree = "<group>"; };
 		33A2CB38E85A9DB503E29F3FFD0ED4D2 /* Pods-GJResourceSelector_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GJResourceSelector_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		36787B0D1CB80AAA454AB725373F1548 /* GJResourceSelector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GJResourceSelector-Info.plist"; sourceTree = "<group>"; };
+		39A238DB92655DD0909DBFE75B6A5CE9 /* GJResourceSelectorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJResourceSelectorView.h; path = GJResourceSelector/Classes/GJResourceSelectorView.h; sourceTree = "<group>"; };
+		3AA13292BA3CA3B70261D7F0BEAA8976 /* GJResourceSelector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GJResourceSelector.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3C9CF040BE9BBCB92E9695D22360FF41 /* Pods-GJResourceSelector_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GJResourceSelector_Tests-dummy.m"; sourceTree = "<group>"; };
 		4052468341AA5BF711D00B2C7FB06762 /* Pods-GJResourceSelector_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GJResourceSelector_Example-dummy.m"; sourceTree = "<group>"; };
-		42D53299A1F842835FA17905E380C68C /* GJSelectResourceTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJSelectResourceTableViewCell.h; path = GJResourceSelector/Classes/GJSelectResourceTableViewCell.h; sourceTree = "<group>"; };
 		435255C9469E39D470C9710AF27819D1 /* Pods-GJResourceSelector_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GJResourceSelector_Example"; path = Pods_GJResourceSelector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		452258B47F693C9D8E595660BA10A788 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		49BF91577A7D7E2AC6AA4A1F50B89431 /* GJSelectResourceTopBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJSelectResourceTopBar.h; path = GJResourceSelector/Classes/GJSelectResourceTopBar.h; sourceTree = "<group>"; };
-		51A44EB1385D22BDD33B4731160505FC /* GJSelectedAssetsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJSelectedAssetsManager.h; path = GJResourceSelector/Classes/GJSelectedAssetsManager.h; sourceTree = "<group>"; };
 		54C43B063C65992379047BA273B2C67B /* GJResourceSelector */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GJResourceSelector; path = GJResourceSelector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DEDD9463B440423402D2E285E75DAB0 /* Pods-GJResourceSelector_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GJResourceSelector_Tests-Info.plist"; sourceTree = "<group>"; };
-		60BAE59883D135E141C4AC3190ED2C5F /* GJSelectResourceTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJSelectResourceTableViewCell.m; path = GJResourceSelector/Classes/GJSelectResourceTableViewCell.m; sourceTree = "<group>"; };
+		62E6903BF691CE8779C1C2187A5D7E0F /* GJResourceSelector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GJResourceSelector.debug.xcconfig; sourceTree = "<group>"; };
 		6470FF741AA6144AA64778B68AB81CD1 /* Pods-GJResourceSelector_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GJResourceSelector_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		64B32E2E4DB41AD2ECD1B8086985B312 /* GJResourceSelectorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJResourceSelectorView.h; path = GJResourceSelector/Classes/GJResourceSelectorView.h; sourceTree = "<group>"; };
 		667494E347BB52AF3A61A78734E81B85 /* Pods-GJResourceSelector_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GJResourceSelector_Example.modulemap"; sourceTree = "<group>"; };
 		67DE8FB75EAACFF9317B38B6535DD310 /* Pods-GJResourceSelector_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GJResourceSelector_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		6ECB7CF01A13EA5149222433061B534E /* GJResourceSelectorHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJResourceSelectorHelper.h; path = GJResourceSelector/Classes/GJResourceSelectorHelper.h; sourceTree = "<group>"; };
+		7129EFE3D54C7FD8C0C761C4385934AF /* GJSelectResourceCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJSelectResourceCollectionViewCell.m; path = GJResourceSelector/Classes/GJSelectResourceCollectionViewCell.m; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		74DBF4207852A7E1534A591F71B77547 /* GJResourceSelector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GJResourceSelector.debug.xcconfig; sourceTree = "<group>"; };
+		75D26CD143BBD72D871424A1D392565F /* GJResourceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJResourceManager.h; path = GJResourceSelector/Classes/GJResourceManager.h; sourceTree = "<group>"; };
+		77268F2EA1745AF9002205C6E956DB1B /* GJResourceSelectorHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJResourceSelectorHelper.m; path = GJResourceSelector/Classes/GJResourceSelectorHelper.m; sourceTree = "<group>"; };
 		787BB40ACD2753FA12F77713361071CB /* Pods-GJResourceSelector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GJResourceSelector_Example.release.xcconfig"; sourceTree = "<group>"; };
+		78AECCA0AE4884445E3DCAA37CB9A8E6 /* gj_photo_selected_open.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gj_photo_selected_open.png; path = GJResourceSelector/Assets/gj_photo_selected_open.png; sourceTree = "<group>"; };
 		79048CD592DB69A5376968781815326C /* Pods-GJResourceSelector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GJResourceSelector_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7BB41420A3A2A388295257B995E71B48 /* GJResourceSelector.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GJResourceSelector.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7F475ED5ED54C5621C60C8405A0ED586 /* GJSelectResourceTableViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJSelectResourceTableViewCell.m; path = GJResourceSelector/Classes/GJSelectResourceTableViewCell.m; sourceTree = "<group>"; };
+		80A50335200D76CE7B5F7F0410210074 /* GJSelectedAssetsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJSelectedAssetsManager.m; path = GJResourceSelector/Classes/GJSelectedAssetsManager.m; sourceTree = "<group>"; };
+		85485AC75719541A5CF791A8B142C8C3 /* GJSelectResourceTableViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJSelectResourceTableViewCell.h; path = GJResourceSelector/Classes/GJSelectResourceTableViewCell.h; sourceTree = "<group>"; };
+		8778732D8C98E6A592D41CC84D7349FA /* ResourceBundle-GJResourceSelector-GJResourceSelector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GJResourceSelector-GJResourceSelector-Info.plist"; sourceTree = "<group>"; };
 		88D0E5F4E1B66602FF0471411449FF28 /* Pods-GJResourceSelector_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GJResourceSelector_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8B007A56E72DAD5B7612293076F32C86 /* Pods-GJResourceSelector_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GJResourceSelector_Example-umbrella.h"; sourceTree = "<group>"; };
-		8BC5217605F6A4BFAE5B0410BB57CF12 /* GJResourceSelector-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GJResourceSelector-dummy.m"; sourceTree = "<group>"; };
 		90544E60F9057632A4111F5CDEAD4389 /* Pods-GJResourceSelector_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GJResourceSelector_Tests-umbrella.h"; sourceTree = "<group>"; };
-		912632F9D9A91CC6C4BC1F6E7E433AD2 /* GJSelectResourceCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJSelectResourceCollectionView.h; path = GJResourceSelector/Classes/GJSelectResourceCollectionView.h; sourceTree = "<group>"; };
 		9137A9BE18CEC8D85AFCB10D415BA1C2 /* Pods-GJResourceSelector_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GJResourceSelector_Tests"; path = Pods_GJResourceSelector_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97121C3893B97248A3351A66BD83F62D /* GJSelectResourceTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJSelectResourceTableView.h; path = GJResourceSelector/Classes/GJSelectResourceTableView.h; sourceTree = "<group>"; };
-		9B71C0A85E6AE33C00F5ECE0928DEFA7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D0BC090ABC387B8FC194319133C13A9 /* GJSelectResourceCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJSelectResourceCollectionViewCell.h; path = GJResourceSelector/Classes/GJSelectResourceCollectionViewCell.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A089AA2B9F74F0965F89C66A12027875 /* GJResourceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJResourceManager.h; path = GJResourceSelector/Classes/GJResourceManager.h; sourceTree = "<group>"; };
-		A4483025A7D97F2CC9BE9E5B3A81F5CE /* GJSelectResourceTopBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJSelectResourceTopBar.m; path = GJResourceSelector/Classes/GJSelectResourceTopBar.m; sourceTree = "<group>"; };
-		A4FD8F3F24E296146EF06DA2F7474486 /* GJResourceSelector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GJResourceSelector-umbrella.h"; sourceTree = "<group>"; };
-		B44153DBC97ECCC487EE6DE27D01AC7D /* GJResourceSelector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GJResourceSelector.modulemap; sourceTree = "<group>"; };
+		A8658D0DC81D4591A1B51A80E5E912D3 /* GJSelectResourceTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJSelectResourceTableView.m; path = GJResourceSelector/Classes/GJSelectResourceTableView.m; sourceTree = "<group>"; };
+		AD3F373B5E88A1C24C57D095986B66A4 /* GJResourceSelector-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GJResourceSelector-umbrella.h"; sourceTree = "<group>"; };
+		B2ACEEACA4198D33C573CB38210306ED /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		B66272EF949011025CC4C9D4D9C6D7E3 /* Pods-GJResourceSelector_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GJResourceSelector_Tests.modulemap"; sourceTree = "<group>"; };
-		BB37C22D66C593F8626AE94FB4E533C5 /* GJSelectResourceCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJSelectResourceCollectionViewCell.m; path = GJResourceSelector/Classes/GJSelectResourceCollectionViewCell.m; sourceTree = "<group>"; };
-		CE91F7974C577489E3F6189E760B5E32 /* GJResourceSelectorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJResourceSelectorView.m; path = GJResourceSelector/Classes/GJResourceSelectorView.m; sourceTree = "<group>"; };
-		E560BEFA9777B86BD04203376951F084 /* GJSelectedAssetsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJSelectedAssetsManager.m; path = GJResourceSelector/Classes/GJSelectedAssetsManager.m; sourceTree = "<group>"; };
-		E6ABC29131A8D7AAE105CCECCB636639 /* GJResourceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJResourceManager.m; path = GJResourceSelector/Classes/GJResourceManager.m; sourceTree = "<group>"; };
-		E8CF8E40EEAFD852FF2538A4C644D612 /* GJResourceSelector-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GJResourceSelector-Info.plist"; sourceTree = "<group>"; };
-		EC0D8F9D6C0C5A3CBBBA58538A03595F /* GJResourceSelector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GJResourceSelector.release.xcconfig; sourceTree = "<group>"; };
+		C10BEEA1B5262F4DF1DDEF3257B68EF0 /* GJResourceSelectorConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJResourceSelectorConfig.h; path = GJResourceSelector/Classes/GJResourceSelectorConfig.h; sourceTree = "<group>"; };
+		C126F3613D0F70A18D2B568827923922 /* GJResourceSelectorConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJResourceSelectorConfig.m; path = GJResourceSelector/Classes/GJResourceSelectorConfig.m; sourceTree = "<group>"; };
+		CC5A5A25E392A8F392BB59F5540C94A0 /* GJSelectResourceCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GJSelectResourceCollectionView.h; path = GJResourceSelector/Classes/GJSelectResourceCollectionView.h; sourceTree = "<group>"; };
+		E2D8C1C641216020453920B4865EAD5F /* GJResourceSelector-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GJResourceSelector-prefix.pch"; sourceTree = "<group>"; };
+		E8AE77BA76A87E9694C5CBC4D968B235 /* GJSelectResourceCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJSelectResourceCollectionView.m; path = GJResourceSelector/Classes/GJSelectResourceCollectionView.m; sourceTree = "<group>"; };
+		EB4289AC23BACBC2A87ECB89DB9D307B /* gj_browser_video.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = gj_browser_video.png; path = GJResourceSelector/Assets/gj_browser_video.png; sourceTree = "<group>"; };
+		F2874213CDF1AC3BB7780F2A81680C91 /* GJSelectResourceTopBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJSelectResourceTopBar.m; path = GJResourceSelector/Classes/GJSelectResourceTopBar.m; sourceTree = "<group>"; };
+		F6743FFB77772E19DA8941895B2E3CA7 /* GJResourceSelector.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GJResourceSelector.modulemap; sourceTree = "<group>"; };
 		F83BCC7526B013BEF3DC5AE62EB2C414 /* Pods-GJResourceSelector_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GJResourceSelector_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FD45B4743EC7EA56679AB3A4E0D4BBD5 /* GJSelectResourceCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GJSelectResourceCollectionView.m; path = GJResourceSelector/Classes/GJSelectResourceCollectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		23E77C797DCF5A66FA452E7D53951B4E /* Frameworks */ = {
+		07CA14614BF1E489740AC29D84567126 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2CB0A60117D9E80F414C6EF38B64DED /* Foundation.framework in Frameworks */,
+				2FA777A3E27F8157ADE70EB33A8F4AE1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8327D98FEF7745B52B81CEE313B40CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +161,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04E22DD201E7622C551CD5714579D515 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3AA13292BA3CA3B70261D7F0BEAA8976 /* GJResourceSelector.podspec */,
+				B2ACEEACA4198D33C573CB38210306ED /* LICENSE */,
+				212BAE888FA33BD258C866AE4A386E1E /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		2503FC1BB8219E5AC515E4BE5D06992C /* Pods-GJResourceSelector_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,19 +204,15 @@
 			path = "Target Support Files/Pods-GJResourceSelector_Example";
 			sourceTree = "<group>";
 		};
-		50D9CFFC003166D82356B192E88CC197 /* Support Files */ = {
+		529270AC7D0F1C494165F170AD5A1532 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B44153DBC97ECCC487EE6DE27D01AC7D /* GJResourceSelector.modulemap */,
-				8BC5217605F6A4BFAE5B0410BB57CF12 /* GJResourceSelector-dummy.m */,
-				E8CF8E40EEAFD852FF2538A4C644D612 /* GJResourceSelector-Info.plist */,
-				21F168F83EB65B5CAF9E2CB24D8E9232 /* GJResourceSelector-prefix.pch */,
-				A4FD8F3F24E296146EF06DA2F7474486 /* GJResourceSelector-umbrella.h */,
-				74DBF4207852A7E1534A591F71B77547 /* GJResourceSelector.debug.xcconfig */,
-				EC0D8F9D6C0C5A3CBBBA58538A03595F /* GJResourceSelector.release.xcconfig */,
+				54C43B063C65992379047BA273B2C67B /* GJResourceSelector */,
+				0FEB7FA4FC5D1BD99D0861A0AF6FFCC3 /* GJResourceSelector-GJResourceSelector */,
+				435255C9469E39D470C9710AF27819D1 /* Pods-GJResourceSelector_Example */,
+				9137A9BE18CEC8D85AFCB10D415BA1C2 /* Pods-GJResourceSelector_Tests */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/GJResourceSelector";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -194,14 +223,28 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		585C374FFFC31DC595D7B8517EE61C0C /* Pod */ = {
+		5920FE45279F3905B4432DF222C14B81 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7BB41420A3A2A388295257B995E71B48 /* GJResourceSelector.podspec */,
-				9B71C0A85E6AE33C00F5ECE0928DEFA7 /* LICENSE */,
-				452258B47F693C9D8E595660BA10A788 /* README.md */,
+				DF139A1F4F42DA722DC3D9415734E40A /* GJResourceSelector */,
 			);
-			name = Pod;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		80F80AF38BE88C5637CE2D506FF42C06 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6743FFB77772E19DA8941895B2E3CA7 /* GJResourceSelector.modulemap */,
+				33565792965D8A5E3A1E053E47F2BF13 /* GJResourceSelector-dummy.m */,
+				36787B0D1CB80AAA454AB725373F1548 /* GJResourceSelector-Info.plist */,
+				E2D8C1C641216020453920B4865EAD5F /* GJResourceSelector-prefix.pch */,
+				AD3F373B5E88A1C24C57D095986B66A4 /* GJResourceSelector-umbrella.h */,
+				62E6903BF691CE8779C1C2187A5D7E0F /* GJResourceSelector.debug.xcconfig */,
+				12E24348B989FB75B99E89592D36E6C7 /* GJResourceSelector.release.xcconfig */,
+				8778732D8C98E6A592D41CC84D7349FA /* ResourceBundle-GJResourceSelector-GJResourceSelector-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GJResourceSelector";
 			sourceTree = "<group>";
 		};
 		97616F27962D2EA950208391B7C4274D /* Targets Support Files */ = {
@@ -213,51 +256,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B739C35AE9C854036C27F47F43A563E9 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BF07C2B12C47F3B654B813A505C107FA /* GJResourceSelector */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		BF07C2B12C47F3B654B813A505C107FA /* GJResourceSelector */ = {
-			isa = PBXGroup;
-			children = (
-				A089AA2B9F74F0965F89C66A12027875 /* GJResourceManager.h */,
-				E6ABC29131A8D7AAE105CCECCB636639 /* GJResourceManager.m */,
-				2467BD5C87B5A9593717D5BFF3907178 /* GJResourceSelectorConfig.h */,
-				1F582DE5F2BC4BC5D735EA95D6ABCF85 /* GJResourceSelectorConfig.m */,
-				6ECB7CF01A13EA5149222433061B534E /* GJResourceSelectorHelper.h */,
-				0CE9314F924078C24B566666D68F8FED /* GJResourceSelectorHelper.m */,
-				64B32E2E4DB41AD2ECD1B8086985B312 /* GJResourceSelectorView.h */,
-				CE91F7974C577489E3F6189E760B5E32 /* GJResourceSelectorView.m */,
-				51A44EB1385D22BDD33B4731160505FC /* GJSelectedAssetsManager.h */,
-				E560BEFA9777B86BD04203376951F084 /* GJSelectedAssetsManager.m */,
-				912632F9D9A91CC6C4BC1F6E7E433AD2 /* GJSelectResourceCollectionView.h */,
-				FD45B4743EC7EA56679AB3A4E0D4BBD5 /* GJSelectResourceCollectionView.m */,
-				17674CDFB997A3EEAE274B3EEEC05A8E /* GJSelectResourceCollectionViewCell.h */,
-				BB37C22D66C593F8626AE94FB4E533C5 /* GJSelectResourceCollectionViewCell.m */,
-				97121C3893B97248A3351A66BD83F62D /* GJSelectResourceTableView.h */,
-				072DB22B9FA1A4BBE41AD28B330DF741 /* GJSelectResourceTableView.m */,
-				42D53299A1F842835FA17905E380C68C /* GJSelectResourceTableViewCell.h */,
-				60BAE59883D135E141C4AC3190ED2C5F /* GJSelectResourceTableViewCell.m */,
-				49BF91577A7D7E2AC6AA4A1F50B89431 /* GJSelectResourceTopBar.h */,
-				A4483025A7D97F2CC9BE9E5B3A81F5CE /* GJSelectResourceTopBar.m */,
-				585C374FFFC31DC595D7B8517EE61C0C /* Pod */,
-				50D9CFFC003166D82356B192E88CC197 /* Support Files */,
-			);
-			name = GJResourceSelector;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B739C35AE9C854036C27F47F43A563E9 /* Development Pods */,
+				5920FE45279F3905B4432DF222C14B81 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				F066E95AB1787B37A87DC5A17E16FE66 /* Products */,
+				529270AC7D0F1C494165F170AD5A1532 /* Products */,
 				97616F27962D2EA950208391B7C4274D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -270,14 +275,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F066E95AB1787B37A87DC5A17E16FE66 /* Products */ = {
+		DF139A1F4F42DA722DC3D9415734E40A /* GJResourceSelector */ = {
 			isa = PBXGroup;
 			children = (
-				54C43B063C65992379047BA273B2C67B /* GJResourceSelector */,
-				435255C9469E39D470C9710AF27819D1 /* Pods-GJResourceSelector_Example */,
-				9137A9BE18CEC8D85AFCB10D415BA1C2 /* Pods-GJResourceSelector_Tests */,
+				EB4289AC23BACBC2A87ECB89DB9D307B /* gj_browser_video.png */,
+				01D1AD2E1BB3956CF84E072AA8B1AA27 /* gj_photo_selected_goback.png */,
+				78AECCA0AE4884445E3DCAA37CB9A8E6 /* gj_photo_selected_open.png */,
+				75D26CD143BBD72D871424A1D392565F /* GJResourceManager.h */,
+				2C1F1C8C494CABA5B221970745A17BD7 /* GJResourceManager.m */,
+				C10BEEA1B5262F4DF1DDEF3257B68EF0 /* GJResourceSelectorConfig.h */,
+				C126F3613D0F70A18D2B568827923922 /* GJResourceSelectorConfig.m */,
+				085D4EF6DCBB4F153F81B3AA0BE5B158 /* GJResourceSelectorHelper.h */,
+				77268F2EA1745AF9002205C6E956DB1B /* GJResourceSelectorHelper.m */,
+				39A238DB92655DD0909DBFE75B6A5CE9 /* GJResourceSelectorView.h */,
+				220ED7BAE2E6A9496501DC0CD76FB21A /* GJResourceSelectorView.m */,
+				147055EB0EDAB83E87CF6C3609A36C51 /* GJSelectedAssetsManager.h */,
+				80A50335200D76CE7B5F7F0410210074 /* GJSelectedAssetsManager.m */,
+				CC5A5A25E392A8F392BB59F5540C94A0 /* GJSelectResourceCollectionView.h */,
+				E8AE77BA76A87E9694C5CBC4D968B235 /* GJSelectResourceCollectionView.m */,
+				9D0BC090ABC387B8FC194319133C13A9 /* GJSelectResourceCollectionViewCell.h */,
+				7129EFE3D54C7FD8C0C761C4385934AF /* GJSelectResourceCollectionViewCell.m */,
+				205D6C953911E820A7B00B98FC9300C2 /* GJSelectResourceTableView.h */,
+				A8658D0DC81D4591A1B51A80E5E912D3 /* GJSelectResourceTableView.m */,
+				85485AC75719541A5CF791A8B142C8C3 /* GJSelectResourceTableViewCell.h */,
+				7F475ED5ED54C5621C60C8405A0ED586 /* GJSelectResourceTableViewCell.m */,
+				08A93E611731918950DF9ED5A6622E36 /* GJSelectResourceTopBar.h */,
+				F2874213CDF1AC3BB7780F2A81680C91 /* GJSelectResourceTopBar.m */,
+				04E22DD201E7622C551CD5714579D515 /* Pod */,
+				80F80AF38BE88C5637CE2D506FF42C06 /* Support Files */,
 			);
-			name = Products;
+			name = GJResourceSelector;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,21 +319,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA3F47FD83B7D96B71808C9DF4594AA8 /* Headers */ = {
+		EF2292CD552D870CA7C38C6C832892C0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06CCA9D0D4275EB5BB27CE3934CCC0A8 /* GJResourceManager.h in Headers */,
-				246F8457B17D1C8E56F169C34F64D539 /* GJResourceSelector-umbrella.h in Headers */,
-				485D13B66C7E2B8F10EA7E65EB0E9C35 /* GJResourceSelectorConfig.h in Headers */,
-				EAA619FE06767F2F38505CF8A3617CAB /* GJResourceSelectorHelper.h in Headers */,
-				F3B9853170B1A00BD6B58A849A8A8E9D /* GJResourceSelectorView.h in Headers */,
-				748057879275BD973A80378EBCABF220 /* GJSelectedAssetsManager.h in Headers */,
-				757241F6CC1B96A7A18AFB521F51DF76 /* GJSelectResourceCollectionView.h in Headers */,
-				A5D8D6FA2375DD25E42956E39CC68F36 /* GJSelectResourceCollectionViewCell.h in Headers */,
-				669218E577929CA541069C2FF358EEBD /* GJSelectResourceTableView.h in Headers */,
-				E318C102EA667D57591879B97EDC7EF5 /* GJSelectResourceTableViewCell.h in Headers */,
-				60A832737DE7A29EF030B5437ECBA670 /* GJSelectResourceTopBar.h in Headers */,
+				C22B5D6A970666B0DF22F5A9A74263AE /* GJResourceManager.h in Headers */,
+				9D6CCA88623F1C108D93B2B581C2B2EB /* GJResourceSelector-umbrella.h in Headers */,
+				D633BCE7E5DC87D9204C1BE6CDF701F2 /* GJResourceSelectorConfig.h in Headers */,
+				5D03CA884CC9AAD33A015A4AF778E80B /* GJResourceSelectorHelper.h in Headers */,
+				D4FFC3EA7241751F5EEF7E878EFC0BD2 /* GJResourceSelectorView.h in Headers */,
+				B4633C03A7B517BF8D503485AD8ACE6A /* GJSelectedAssetsManager.h in Headers */,
+				694F5DF67B107BD96713C56CC5BA5BA2 /* GJSelectResourceCollectionView.h in Headers */,
+				C8D812CDD2E996B4AB2C78EA4C9C2327 /* GJSelectResourceCollectionViewCell.h in Headers */,
+				4C155A1329D469572A5D1D593E348825 /* GJSelectResourceTableView.h in Headers */,
+				B976B9E8DC43295573E8F8A36D423E91 /* GJSelectResourceTableViewCell.h in Headers */,
+				F6358373BC260AA92BF92C48F9433EEC /* GJSelectResourceTopBar.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +348,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		39BBB70212B2AAE0921CDD15E288FC6F /* GJResourceSelector-GJResourceSelector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E908EA64DF850364B41B6AF8328B78C4 /* Build configuration list for PBXNativeTarget "GJResourceSelector-GJResourceSelector" */;
+			buildPhases = (
+				BA0D8A41A3CA3214362E7EC1DFCFC3CE /* Sources */,
+				8327D98FEF7745B52B81CEE313B40CEA /* Frameworks */,
+				6520D4A0543839FE435D3FFF0BC9D747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GJResourceSelector-GJResourceSelector";
+			productName = GJResourceSelector;
+			productReference = 0FEB7FA4FC5D1BD99D0861A0AF6FFCC3 /* GJResourceSelector-GJResourceSelector */;
+			productType = "com.apple.product-type.bundle";
+		};
 		547A66FABE004DBB12532B61BAAFBD7D /* Pods-GJResourceSelector_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 156A214146C284AE4C2D3A0D72A8DE4E /* Build configuration list for PBXNativeTarget "Pods-GJResourceSelector_Tests" */;
@@ -332,7 +377,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DE896B355432EEE58371708715431829 /* PBXTargetDependency */,
+				75DC5DBE9F2FB563524DD8479C14A74E /* PBXTargetDependency */,
 			);
 			name = "Pods-GJResourceSelector_Tests";
 			productName = Pods_GJResourceSelector_Tests;
@@ -351,7 +396,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				22A0CC4BDD8D92AB34CB7F211C8288E5 /* PBXTargetDependency */,
+				FD2F360988F4FFC2FBD230F828915FF0 /* PBXTargetDependency */,
 			);
 			name = "Pods-GJResourceSelector_Example";
 			productName = Pods_GJResourceSelector_Example;
@@ -360,16 +405,17 @@
 		};
 		F8EDC8CADC533DB289A84B740CDD3E3F /* GJResourceSelector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D65C22EB4A1F3BBB972585EB6FCF1371 /* Build configuration list for PBXNativeTarget "GJResourceSelector" */;
+			buildConfigurationList = 05264B2E2F25454A2ED5875F49EB5581 /* Build configuration list for PBXNativeTarget "GJResourceSelector" */;
 			buildPhases = (
-				DA3F47FD83B7D96B71808C9DF4594AA8 /* Headers */,
-				B014047EC90C77A010E6C0A503DB643E /* Sources */,
-				23E77C797DCF5A66FA452E7D53951B4E /* Frameworks */,
-				5A82FE5BD61EDD0F263EF83D29A8B916 /* Resources */,
+				EF2292CD552D870CA7C38C6C832892C0 /* Headers */,
+				98E8B013AADE4EB5AC250399458E1A4F /* Sources */,
+				07CA14614BF1E489740AC29D84567126 /* Frameworks */,
+				FC8C117EE14B7738AB89B8117762C583 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E1ABA41908AEC6B1E381B91BFD9463CC /* PBXTargetDependency */,
 			);
 			name = GJResourceSelector;
 			productName = GJResourceSelector;
@@ -394,11 +440,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F066E95AB1787B37A87DC5A17E16FE66 /* Products */;
+			productRefGroup = 529270AC7D0F1C494165F170AD5A1532 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F8EDC8CADC533DB289A84B740CDD3E3F /* GJResourceSelector */,
+				39BBB70212B2AAE0921CDD15E288FC6F /* GJResourceSelector-GJResourceSelector */,
 				A413A7BA1C45BE6FC290CF5F8678863C /* Pods-GJResourceSelector_Example */,
 				547A66FABE004DBB12532B61BAAFBD7D /* Pods-GJResourceSelector_Tests */,
 			);
@@ -413,10 +460,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A82FE5BD61EDD0F263EF83D29A8B916 /* Resources */ = {
+		6520D4A0543839FE435D3FFF0BC9D747 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3DB07299245EABB1770FECD310C29F4 /* gj_browser_video.png in Resources */,
+				7CB265030D57DFCD37AD373B58B9D5B6 /* gj_photo_selected_goback.png in Resources */,
+				25EC22648D6FB7E1861595B52A8144DF /* gj_photo_selected_open.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,24 +477,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC8C117EE14B7738AB89B8117762C583 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FDB4685919AD4ACA5788C014CAF941B /* GJResourceSelector-GJResourceSelector in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B014047EC90C77A010E6C0A503DB643E /* Sources */ = {
+		98E8B013AADE4EB5AC250399458E1A4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A500F11F1D3B0A99417CDED4CA647DD /* GJResourceManager.m in Sources */,
-				8C267DE2072EBE85112439A10C4050A7 /* GJResourceSelector-dummy.m in Sources */,
-				35C56D4AE2D6AD6C96D12E6E6FEB0CCF /* GJResourceSelectorConfig.m in Sources */,
-				7353782FA58323C55B0C7E223C736A10 /* GJResourceSelectorHelper.m in Sources */,
-				B6495AD4F6CE54E83ACD400B7D735294 /* GJResourceSelectorView.m in Sources */,
-				CDA39066800B4D4F80A16609AB7DECEE /* GJSelectedAssetsManager.m in Sources */,
-				8F3A177C69F5BEAABD21D3905B8BDB8D /* GJSelectResourceCollectionView.m in Sources */,
-				4915AAD92A132312189601AA626B53F3 /* GJSelectResourceCollectionViewCell.m in Sources */,
-				7CF7AC7D1F72D7DB84D04DA2BAF78CFD /* GJSelectResourceTableView.m in Sources */,
-				DED6B8C4CD1FE03750DAC007E2B9AC75 /* GJSelectResourceTableViewCell.m in Sources */,
-				251D751366D2DF5F5F4D9AF349D888BC /* GJSelectResourceTopBar.m in Sources */,
+				7C9E4D068F95642FEA61B85BF2DB73C6 /* GJResourceManager.m in Sources */,
+				5A1C23CC737B11067F9D94BE649BD0DE /* GJResourceSelector-dummy.m in Sources */,
+				27EE300ED9F7A500F087662CD76926E4 /* GJResourceSelectorConfig.m in Sources */,
+				78CCC0D9F3D79E06288F648BCA04C2BB /* GJResourceSelectorHelper.m in Sources */,
+				61FB44BDCA784331B79838A843F2AAFE /* GJResourceSelectorView.m in Sources */,
+				A06133E1E2FE869D3D5F76693112AB06 /* GJSelectedAssetsManager.m in Sources */,
+				F95718EF9765C890F3552B218FA6128B /* GJSelectResourceCollectionView.m in Sources */,
+				DDF0D4953E3BDD376D82607E8EB44729 /* GJSelectResourceCollectionViewCell.m in Sources */,
+				9D04EA17690A32F81A47E61E5CC859DB /* GJSelectResourceTableView.m in Sources */,
+				999532CEB4D5B7248E221F5779AF0C26 /* GJSelectResourceTableViewCell.m in Sources */,
+				FA409E63D308436196BFE1E8F401AEB0 /* GJSelectResourceTopBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA0D8A41A3CA3214362E7EC1DFCFC3CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,17 +532,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		22A0CC4BDD8D92AB34CB7F211C8288E5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GJResourceSelector;
-			target = F8EDC8CADC533DB289A84B740CDD3E3F /* GJResourceSelector */;
-			targetProxy = A488A69C3CE2C0EF18564AF89E209C3E /* PBXContainerItemProxy */;
-		};
-		DE896B355432EEE58371708715431829 /* PBXTargetDependency */ = {
+		75DC5DBE9F2FB563524DD8479C14A74E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-GJResourceSelector_Example";
 			target = A413A7BA1C45BE6FC290CF5F8678863C /* Pods-GJResourceSelector_Example */;
-			targetProxy = 03408B7C433E2F4BBFF3EF153F547801 /* PBXContainerItemProxy */;
+			targetProxy = 7AC932A68B6704F8F06978DA759BAAA7 /* PBXContainerItemProxy */;
+		};
+		E1ABA41908AEC6B1E381B91BFD9463CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GJResourceSelector-GJResourceSelector";
+			target = 39BBB70212B2AAE0921CDD15E288FC6F /* GJResourceSelector-GJResourceSelector */;
+			targetProxy = 0DE0F8907AAB8E61CDC5B8BD5BF52CC4 /* PBXContainerItemProxy */;
+		};
+		FD2F360988F4FFC2FBD230F828915FF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GJResourceSelector;
+			target = F8EDC8CADC533DB289A84B740CDD3E3F /* GJResourceSelector */;
+			targetProxy = F38F2EA934C27CA6A04109465EFA1939 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -509,6 +580,38 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A4B2F2777D26E426E568C3217FD58C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12E24348B989FB75B99E89592D36E6C7 /* GJResourceSelector.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GJResourceSelector/GJResourceSelector-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GJResourceSelector/GJResourceSelector-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GJResourceSelector/GJResourceSelector.modulemap";
+				PRODUCT_MODULE_NAME = GJResourceSelector;
+				PRODUCT_NAME = GJResourceSelector;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -549,37 +652,22 @@
 			};
 			name = Debug;
 		};
-		4E4086A5204685950779711A403DC6E1 /* Release */ = {
+		53F6C3B25A59BBF1326A8CFE938662A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC0D8F9D6C0C5A3CBBBA58538A03595F /* GJResourceSelector.release.xcconfig */;
+			baseConfigurationReference = 62E6903BF691CE8779C1C2187A5D7E0F /* GJResourceSelector.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GJResourceSelector/GJResourceSelector-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GJResourceSelector/GJResourceSelector-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GJResourceSelector/GJResourceSelector.modulemap";
-				PRODUCT_MODULE_NAME = GJResourceSelector;
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GJResourceSelector";
+				IBSC_MODULE = GJResourceSelector;
+				INFOPLIST_FILE = "Target Support Files/GJResourceSelector/ResourceBundle-GJResourceSelector-GJResourceSelector-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PRODUCT_NAME = GJResourceSelector;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
 		59E9C88ACB1B39DDCDFD6497F6A2544F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -612,6 +700,23 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D66CC3757B5F75421EAE70281559A7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12E24348B989FB75B99E89592D36E6C7 /* GJResourceSelector.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GJResourceSelector";
+				IBSC_MODULE = GJResourceSelector;
+				INFOPLIST_FILE = "Target Support Files/GJResourceSelector/ResourceBundle-GJResourceSelector-GJResourceSelector-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_NAME = GJResourceSelector;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -677,37 +782,6 @@
 			};
 			name = Release;
 		};
-		8D7C3B421F006CF643DBAFDC99316E3A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74DBF4207852A7E1534A591F71B77547 /* GJResourceSelector.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GJResourceSelector/GJResourceSelector-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GJResourceSelector/GJResourceSelector-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GJResourceSelector/GJResourceSelector.modulemap";
-				PRODUCT_MODULE_NAME = GJResourceSelector;
-				PRODUCT_NAME = GJResourceSelector;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		9B25817491380DE1F0CE00EA38233723 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6470FF741AA6144AA64778B68AB81CD1 /* Pods-GJResourceSelector_Tests.debug.xcconfig */;
@@ -735,6 +809,37 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AA6D58D2934CAA66DF33AE02B301BD45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62E6903BF691CE8779C1C2187A5D7E0F /* GJResourceSelector.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GJResourceSelector/GJResourceSelector-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GJResourceSelector/GJResourceSelector-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GJResourceSelector/GJResourceSelector.modulemap";
+				PRODUCT_MODULE_NAME = GJResourceSelector;
+				PRODUCT_NAME = GJResourceSelector;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -810,6 +915,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		05264B2E2F25454A2ED5875F49EB5581 /* Build configuration list for PBXNativeTarget "GJResourceSelector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA6D58D2934CAA66DF33AE02B301BD45 /* Debug */,
+				1A4B2F2777D26E426E568C3217FD58C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		156A214146C284AE4C2D3A0D72A8DE4E /* Build configuration list for PBXNativeTarget "Pods-GJResourceSelector_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -828,11 +942,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D65C22EB4A1F3BBB972585EB6FCF1371 /* Build configuration list for PBXNativeTarget "GJResourceSelector" */ = {
+		E908EA64DF850364B41B6AF8328B78C4 /* Build configuration list for PBXNativeTarget "GJResourceSelector-GJResourceSelector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D7C3B421F006CF643DBAFDC99316E3A /* Debug */,
-				4E4086A5204685950779711A403DC6E1 /* Release */,
+				53F6C3B25A59BBF1326A8CFE938662A2 /* Debug */,
+				5D66CC3757B5F75421EAE70281559A7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

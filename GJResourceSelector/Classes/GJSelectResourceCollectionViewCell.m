@@ -37,10 +37,10 @@
 -(UIButton *)selectedBtn{
     if (!_selectedBtn){
         _selectedBtn = [UIButton new];
-        [_selectedBtn setBackgroundImage:GJResourceSelectorConfig.config.unSelectedImage forState:UIControlStateNormal];
-        [_selectedBtn setBackgroundImage:GJResourceSelectorConfig.config.selectedImage forState:UIControlStateSelected];
         [_selectedBtn addTarget:self action:@selector(selectedPhotoSelector) forControlEvents:UIControlEventTouchUpInside];
-        [_selectedBtn setTitleColor:GJResourceSelectorConfig.config.videoDurationTextColor forState:UIControlStateNormal];
+        [_selectedBtn setTitleColor:GJResourceSelectorConfig.config.selectedButtonTitleColor forState:UIControlStateNormal];
+        _selectedBtn.layer.masksToBounds = YES;
+        _selectedBtn.layer.cornerRadius = 15/2;
         _selectedBtn.titleLabel.font = [UIFont systemFontOfSize:10];
     }
     return _selectedBtn;
@@ -48,7 +48,7 @@
 -(UILabel *)videoDurationLb{
     if (!_videoDurationLb) {
         _videoDurationLb = [UILabel new];
-        _videoDurationLb.textColor = [UIColor whiteColor];
+        _videoDurationLb.textColor = GJResourceSelectorConfig.config.videoDurationTextColor;
         _videoDurationLb.font = [UIFont systemFontOfSize:14];
     }
     return _videoDurationLb;
@@ -67,7 +67,10 @@
     self.selectedBtn .translatesAutoresizingMaskIntoConstraints = NO;
     NSLayoutConstraint *selectedBtn_top = [NSLayoutConstraint constraintWithItem:self.selectedBtn attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:5];
     NSLayoutConstraint *selectedBtn_right = [NSLayoutConstraint constraintWithItem:self.selectedBtn attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:-20];
+    NSLayoutConstraint *selectedBtn_height = [NSLayoutConstraint constraintWithItem:self.selectedBtn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeHeight multiplier:1 constant:15];
+    NSLayoutConstraint *selectedBtn_width = [NSLayoutConstraint constraintWithItem:self.selectedBtn attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeWidth multiplier:1 constant:15];
     [self addConstraints:@[selectedBtn_top,selectedBtn_right]];
+    [self.selectedBtn addConstraints:@[selectedBtn_height,selectedBtn_width]];
     
     self.videoDurationLb .translatesAutoresizingMaskIntoConstraints = NO;
     NSLayoutConstraint *videoDurationLb_bottom = [NSLayoutConstraint constraintWithItem:self.videoDurationLb attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:-5];
@@ -115,9 +118,16 @@
         NSInteger index = [GJSelectedAssetsManager.manager.allSelectedAssets indexOfObject:asset];
         [self.selectedBtn setTitle:[NSString stringWithFormat:@"%ld",index+1] forState:UIControlStateNormal];
         self.selectedBtn.selected = YES;
+        self.selectedBtn.backgroundColor = GJResourceSelectorConfig.config.selectedButtonBgColor;
+        self.selectedBtn.layer.borderWidth = 1;
+        self.selectedBtn.layer.borderColor = [UIColor clearColor].CGColor;
+        
     }else{
         [self.selectedBtn setTitle:@"" forState:UIControlStateNormal];
         self.selectedBtn.selected = NO;
+        self.selectedBtn.backgroundColor = [UIColor clearColor];
+        self.selectedBtn.layer.borderWidth = 1;
+        self.selectedBtn.layer.borderColor =  GJResourceSelectorConfig.config.unSelectedButtonBorderColor.CGColor;
     }
     
     if (!GJSelectedAssetsManager.manager.selectable) {
