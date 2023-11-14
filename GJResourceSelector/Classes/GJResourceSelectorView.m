@@ -33,7 +33,7 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor clearColor];
         [self addSubview:self.effectView];
         [self addSubview:self.contentView];
         [self.contentView addSubview:self.collectionView];

@@ -47,29 +47,6 @@
     if(self.clickItemBlock){
         self.clickItemBlock(indexPath.row, self.fetchResult, self);
     }
-//    GJSelectedAssetsManager *browser = [GJSelectedAssetsManager new];
-//    browser.defaultToolViewHandler.topView.operationType = 3;
-//    NSMutableArray *dataSourceArray = [NSMutableArray arrayWithCapacity:5];
-//    [self.fetchResult enumerateObjectsUsingBlock:^(PHAsset *asset, NSUInteger idx, BOOL * _Nonnull stop) {
-//        if (asset.sourceType == PHAssetMediaTypeImage) {
-//            YBIBImageData *data = [YBIBImageData new];
-//            data.imagePHAsset = asset;
-//            GJSelectResourceCollectionViewCell* cell = (GJSelectResourceCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
-//            data.projectiveView = cell.iconImageView;
-//            [dataSourceArray addObject:data];
-//
-//        }else{
-//            YBIBVideoData *data = [YBIBVideoData new];
-//            data.autoPlayCount = NSUIntegerMax;
-//            data.videoPHAsset = asset;
-//            GJSelectResourceCollectionViewCell* cell = (GJSelectResourceCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
-//            data.projectiveView = cell.iconImageView;
-//            [dataSourceArray addObject:data];
-//        }
-//    }];
-//    browser.dataSourceArray = dataSourceArray;
-//    browser.currentPage = indexPath.row;
-//    [browser show];
 }
 -(void)setFetchResult:(PHFetchResult *)fetchResult{
     _fetchResult = fetchResult;
