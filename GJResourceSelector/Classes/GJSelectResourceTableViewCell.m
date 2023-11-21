@@ -95,8 +95,7 @@
     }
     __weak typeof(self) weakSelf = self;
     [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeAspectFill options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-        __strong typeof(self) strongSelf = weakSelf;
-        strongSelf.pictureView.image = result;
+        weakSelf.pictureView.image = result;
     }];
     
     self.titleLb.text = assetCollection.localizedTitle;

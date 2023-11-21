@@ -94,8 +94,7 @@
     options.synchronous = YES;
     __weak typeof(self) weakSelf = self;
     [[PHImageManager defaultManager] requestImageForAsset:asset targetSize:size contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-        __strong typeof(self) strongSelf = weakSelf;
-        strongSelf.iconImageView.image = result;
+        weakSelf.iconImageView.image = result;
     }];
     if (asset.mediaType == PHAssetMediaTypeVideo) {
         NSMutableAttributedString * attStr = [[NSMutableAttributedString alloc]init];

@@ -91,26 +91,23 @@
         _topBar = [[GJSelectResourceTopBar alloc]initWithFrame:CGRectMake(0, 0, GJResourceScreenWidth, 65)];
         __weak typeof(self) weakSelf = self;
         [_topBar setGobackBlock:^{
-            __strong typeof(self) strongSelf = weakSelf;
             [UIView animateWithDuration:.2 animations:^{
-                strongSelf.tableView.frame = CGRectMake(0, -(strongSelf.contentView.bounds.size.height-65), GJResourceScreenWidth, strongSelf.contentView.bounds.size.height-65);
-                [strongSelf closeDown];
-                if (strongSelf.cancelBlock) {
-                    strongSelf.cancelBlock(strongSelf);
+                weakSelf.tableView.frame = CGRectMake(0, -(weakSelf.contentView.bounds.size.height-65), GJResourceScreenWidth, weakSelf.contentView.bounds.size.height-65);
+                [weakSelf closeDown];
+                if (weakSelf.cancelBlock) {
+                    weakSelf.cancelBlock(weakSelf);
                     [GJSelectedAssetsManager.manager removeAllSelectedAssets];
                 }
             }];
         }];
         [_topBar setSelectedBlock:^{
-            __strong typeof(self) strongSelf = weakSelf;
-            [strongSelf seleBrowser];
+            [weakSelf seleBrowser];
         }];
         [_topBar setSureBlock:^{
-            __strong typeof(self) strongSelf = weakSelf;
             [UIView animateWithDuration:.2 animations:^{
-                strongSelf.tableView.frame = CGRectMake(0, -(strongSelf.contentView.bounds.size.height-65), GJResourceScreenWidth, strongSelf.contentView.bounds.size.height-65);
-                [strongSelf closeDown];
-                [strongSelf selectedPhotos];
+                weakSelf.tableView.frame = CGRectMake(0, -(weakSelf.contentView.bounds.size.height-65), GJResourceScreenWidth, weakSelf.contentView.bounds.size.height-65);
+                [weakSelf closeDown];
+                [weakSelf selectedPhotos];
                 [GJSelectedAssetsManager.manager removeAllSelectedAssets];
             }];
         }];
@@ -174,8 +171,7 @@
         _collectionView.backgroundColor = [UIColor whiteColor];
         __weak typeof(self) weakSelf = self;
         [_collectionView setClickItemBlock:^(NSInteger index, PHFetchResult * _Nullable fetchResult, GJSelectResourceCollectionView * _Nonnull collectionView) {
-            __strong typeof(self) strongSelf = weakSelf;
-            strongSelf.clickItemBlock(index, fetchResult, collectionView);
+            weakSelf.clickItemBlock(index, fetchResult, collectionView);
         }];
     }
     return _collectionView;
@@ -185,10 +181,9 @@
         _tableView = [[GJSelectResourceTableView alloc]initWithFrame:CGRectMake(0, 65, GJResourceScreenWidth, self.contentView.bounds.size.height-self.topBar.bounds.size.height) style:UITableViewStylePlain];
         __weak typeof(self) weakSelf = self;
         [_tableView setSelectedBlock:^(PHAssetCollection * _Nonnull assetCollection) {
-            __strong typeof(self) strongSelf = weakSelf;
-            [strongSelf selectedAssetCollection:assetCollection];
+            [weakSelf selectedAssetCollection:assetCollection];
             [UIView animateWithDuration:.2 animations:^{
-                strongSelf.tableView.frame = CGRectMake(0, -(strongSelf.contentView.bounds.size.height-65), GJResourceScreenWidth, strongSelf.contentView.bounds.size.height-65-GJResourceTabBarHeight*.8);
+                weakSelf.tableView.frame = CGRectMake(0, -(weakSelf.contentView.bounds.size.height-65), GJResourceScreenWidth, weakSelf.contentView.bounds.size.height-65-GJResourceTabBarHeight*.8);
             }];
         }];
     }
