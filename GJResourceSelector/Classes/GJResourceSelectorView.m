@@ -171,7 +171,9 @@
         _collectionView.backgroundColor = [UIColor whiteColor];
         __weak typeof(self) weakSelf = self;
         [_collectionView setClickItemBlock:^(NSInteger index, PHFetchResult * _Nullable fetchResult, GJSelectResourceCollectionView * _Nonnull collectionView) {
-            weakSelf.clickItemBlock(index, fetchResult, collectionView);
+            if(weakSelf.clickItemBlock){
+                weakSelf.clickItemBlock(index, fetchResult, collectionView);
+            }
         }];
     }
     return _collectionView;
